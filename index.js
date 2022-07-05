@@ -18,7 +18,7 @@ class Producto {
 }
 
 //Productos
-const producto1 = new Producto("Lasagna de acelga", 10);
+const producto1 = new Producto("Lasagna de acelga", 400);
 const producto2 = new Producto("Guiso de lentejas", 20);
 const producto3 = new Producto("Malfatti de espinaca", 30);
 const producto4 = new Producto("Fideos de zucchini y zanahoria", 40);
@@ -77,7 +77,7 @@ while (eleccionProducto !== 0) {
       alert("Ingrese opcion válida");
     }
   }
-  
+
   let seguirComprando = prompt("¿Desea seguir comprando?").toLowerCase();
 
   while (seguirComprando === "si") {
