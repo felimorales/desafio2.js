@@ -49,70 +49,35 @@ let eleccionProducto = parseInt(
 );
 
 while (eleccionProducto !== 0) {
-  if (eleccionProducto === 1) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto1.vender(cantidad);}
-  } else if (eleccionProducto === 2) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto2.vender(cantidad);}
-  } else if (eleccionProducto === 3) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto3.vender(cantidad);}
-  } else if (eleccionProducto === 4) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto4.vender(cantidad);}
-  } else if (eleccionProducto === 5) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto5.vender(cantidad);}
-  } else if (eleccionProducto === 6) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto6.vender(cantidad);}
-  } else if (eleccionProducto === 7) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto7.vender(cantidad);}
-  } else if (eleccionProducto === 8) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto8.vender(cantidad);}
-  } else if (eleccionProducto === 9) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto9.vender(cantidad);}
-  } else if (eleccionProducto === 10) {
-    let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-    if (isNaN(cantidad)){
-      alert("Ingresar cantidad válida")
-    } else {
-    producto10.vender(cantidad);}
+  let cantidad = parseInt(prompt("Indique una cantidad de viandas."));
+  if (isNaN(cantidad)) {
+    alert("Ingresar cantidad válida");
   } else {
-    alert("Ingrese opcion válida");
+    if (eleccionProducto === 1) {
+      producto1.vender(cantidad);
+    } else if (eleccionProducto === 2) {
+      producto2.vender(cantidad);
+    } else if (eleccionProducto === 3) {
+      producto3.vender(cantidad);
+    } else if (eleccionProducto === 4) {
+      producto4.vender(cantidad);
+    } else if (eleccionProducto === 5) {
+      producto5.vender(cantidad);
+    } else if (eleccionProducto === 6) {
+      producto6.vender(cantidad);
+    } else if (eleccionProducto === 7) {
+      producto7.vender(cantidad);
+    } else if (eleccionProducto === 8) {
+      producto8.vender(cantidad);
+    } else if (eleccionProducto === 9) {
+      producto9.vender(cantidad);
+    } else if (eleccionProducto === 10) {
+      producto10.vender(cantidad);
+    } else {
+      alert("Ingrese opcion válida");
+    }
   }
-
+  
   let seguirComprando = prompt("¿Desea seguir comprando?").toLowerCase();
 
   while (seguirComprando === "si") {
@@ -130,86 +95,39 @@ while (eleccionProducto !== 0) {
       (10) ${producto10.nombre}
       `)
     );
-
-    if (eleccionProducto === 0) {
-      alert(
-        "Gracias por visitar Que Rico Soli!! Esperamos volver a verte pronto."
-      );
-      break;
-    } else if (eleccionProducto === 1) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto1.vender(cantidad);
-      }
-    } else if (eleccionProducto === 2) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto2.vender(cantidad);
-      }
-    } else if (eleccionProducto === 3) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto3.vender(cantidad);
-      }
-    } else if (eleccionProducto === 4) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto4.vender(cantidad);
-      }
-    } else if (eleccionProducto === 5) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto5.vender(cantidad);
-      }
-    } else if (eleccionProducto === 6) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto6.vender(cantidad);
-      }
-    } else if (eleccionProducto === 7) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto7.vender(cantidad);
-      }
-    } else if (eleccionProducto === 8) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto8.vender(cantidad);
-      }
-    } else if (eleccionProducto === 9) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto9.vender(cantidad);
-      }
-    } else if (eleccionProducto === 10) {
-      cantidad = parseInt(prompt("Indique una cantidad de viandas."));
-      if (isNaN(cantidad)) {
-        alert("Ingresar cantidad válida");
-      } else {
-        producto10.vender(cantidad);
-      }
+    cantidad = parseInt(prompt("Indique una cantidad de viandas."));
+    if (isNaN(cantidad)) {
+      alert("Ingresar cantidad válida");
     } else {
-      alert("Ingrese opcion válida");
+      if (eleccionProducto === 0) {
+        alert(
+          "Gracias por visitar Que Rico Soli!! Esperamos volver a verte pronto."
+        );
+        break;
+      } else if (eleccionProducto === 1) {
+        producto1.vender(cantidad);
+      } else if (eleccionProducto === 2) {
+        producto2.vender(cantidad);
+      } else if (eleccionProducto === 3) {
+        producto3.vender(cantidad);
+      } else if (eleccionProducto === 4) {
+        producto4.vender(cantidad);
+      } else if (eleccionProducto === 5) {
+        producto5.vender(cantidad);
+      } else if (eleccionProducto === 6) {
+        producto6.vender(cantidad);
+      } else if (eleccionProducto === 7) {
+        producto7.vender(cantidad);
+      } else if (eleccionProducto === 8) {
+        producto8.vender(cantidad);
+      } else if (eleccionProducto === 9) {
+        producto9.vender(cantidad);
+      } else if (eleccionProducto === 10) {
+        producto10.vender(cantidad);
+      } else {
+        alert("Ingrese opcion válida");
+      }
     }
-
     seguirComprando = prompt("¿Desea seguir comprando?").toLowerCase();
   }
 
